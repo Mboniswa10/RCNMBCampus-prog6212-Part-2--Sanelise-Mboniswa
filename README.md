@@ -67,3 +67,56 @@ Server=(localdb)\MSSQLLocalDB;Database=RaceDay;Trusted_Connection=True;TrustServ
 Make sure the RaceDay database exists in your local SQL Server instance before running the API.
 
 
+5. Implemented API Features
+
+The following functionality has been implemented and tested during development:
+
+Events API
+
+Retrieve all events.
+
+Retrieve an event by its ID.
+
+Categories API
+
+Retrieve all categories.
+
+Retrieve a category by its ID.
+
+Enrolments API
+
+Retrieve all enrolments.
+
+Retrieve an enrolment by its ID.
+
+Return HTTP 404 when an enrolment cannot be found.
+
+Results API
+
+Retrieve all results.
+
+Retrieve a result by its ID.
+
+Return HTTP 404 when a result cannot be found.
+
+Protect the results endpoints with JWT authentication.
+
+Authentication API
+
+Register a new user.
+
+Log in using registered credentials.
+
+Hash passwords before storing them.
+
+Generate JWT tokens after successful login.
+
+Use JWT Bearer authentication to access protected endpoints.
+
+Public registration assigns the Participant role by default.
+
+Database diagnostics
+
+A database diagnostic endpoint is available to help verify the database connection:
+
+GET /api/diagnostics/database
