@@ -204,3 +204,7 @@ The project demonstrates the implementation and verification of core API functio
 **Project:** RaceDay
 **Framework:** .NET 8
 **Development environment:** Visual Studio 2022
+
+## Project Author
+
+Sanelise Mboniswa
