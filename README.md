@@ -198,3 +198,53 @@ GET
 Check database connectivity
 
 Open Swagger after starting the application to view and test the available endpoints.
+
+7. How to Run the Project
+
+Prerequisites
+
+Ensure that the following are installed:
+
+Microsoft Visual Studio 2022.
+
+The .NET 8 SDK.
+
+SQL Server LocalDB.
+
+The RaceDay database and required tables.
+
+Setup instructions
+
+Clone the RaceDay repository from GitHub or open the existing local repository.
+
+Open the solution file (.sln) in Visual Studio 2022.
+
+Check that the required NuGet packages are restored.
+
+Verify the database connection string in RaceDay.Api/appsettings.json.
+
+Confirm that the RaceDay database contains the required tables and sample data.
+
+Set RaceDay.Api as the startup project.
+
+Build the solution using Build → Build Solution.
+
+Run the application using HTTPS or the configured development profile.
+
+Open the Swagger page displayed by the application.
+
+Testing authentication
+
+Use POST /api/Auth/register to create a test account.
+
+Use POST /api/Auth/login with the registered email and password.
+
+Copy the JWT token returned by the login endpoint.
+
+Use the token to authorize requests to protected endpoints.
+
+Test the Results endpoints and confirm that authenticated requests return the expected data.
+
+Security note: Keep JWT signing keys and other secrets out of public repositories. Use development secrets or environment variables for sensitive configuration. Do not use a development signing key in production.
+
+
