@@ -27,3 +27,13 @@ API documentation and testing: Swagger / OpenAPI
 Unit testing: xUnit
 
 Version control: Git and GitHub
+
+3. Solution Structure
+
+The solution contains the following projects:
+
+RaceDay.Api – Contains the Web API, controllers, data access configuration, database context, models, authentication, and application configuration.
+
+RaceDay.Contracts – Contains the contracts project for sharing request or response definitions between application components.
+
+RaceDay.Api.Tests – Contains automated tests for API functionality.
