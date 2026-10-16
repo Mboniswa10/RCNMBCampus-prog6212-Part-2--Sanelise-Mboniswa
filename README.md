@@ -303,6 +303,9 @@ RaceDay Part 2 extends the original database project by introducing a .NET 8 Web
 
 The project demonstrates the implementation and verification of core API functionality using Microsoft development technologies.
 
-
+Assignment: PROG6212 – Part 2
+Project: RaceDay
+Framework: .NET 8
+Development environment: Visual Studio 2022
 
 
