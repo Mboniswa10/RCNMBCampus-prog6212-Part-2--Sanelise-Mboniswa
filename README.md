@@ -247,4 +247,54 @@ Test the Results endpoints and confirm that authenticated requests return the ex
 
 Security note: Keep JWT signing keys and other secrets out of public repositories. Use development secrets or environment variables for sensitive configuration. Do not use a development signing key in production.
 
+8. Testing and Verification
+
+The following checks were completed during development:
+
+The solution built successfully.
+
+The database diagnostic endpoint returned HTTP 200.
+
+The Events API returned HTTP 200 for collection and individual-event requests.
+
+The Categories API returned HTTP 200 for collection and individual-category requests.
+
+The Enrolments API returned HTTP 200 for existing data and HTTP 404 for a missing enrolment.
+
+The Results API returned HTTP 200 for collection and individual-result requests and HTTP 404 for a missing result.
+
+User registration and login returned successful HTTP responses.
+
+JWT authentication was used to access a protected Results endpoint.
+
+The automated test suite reported 3 tests passed and 0 failed at the time of verification.
+
+These results reflect the functionality verified during development. Run the build and tests again before final submission.
+
+9. Automated Testing
+
+The RaceDay.Api.Tests project uses xUnit for automated testing.
+
+To run the tests in Visual Studio 2022:
+
+Open Test → Test Explorer.
+
+Build the solution.
+
+Select Run All Tests.
+
+Check the results and resolve any failures.
+
+Alternatively, run the following command from the solution directory:
+
+dotnet test
+
+11. Demonstration Video
+
+The demonstration video presents the RaceDay Part 2 project and its implemented functionality.
+
+YouTube video: [Insert your YouTube video link here]
+
+Replace the placeholder above with the actual link to your demonstration video.
+
 
