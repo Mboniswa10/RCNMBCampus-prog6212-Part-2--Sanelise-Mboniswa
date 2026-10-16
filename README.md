@@ -120,3 +120,81 @@ Database diagnostics
 A database diagnostic endpoint is available to help verify the database connection:
 
 GET /api/diagnostics/database
+
+6. API Endpoints
+
+The following endpoints are available in the implemented API:
+
+Method
+
+Endpoint
+
+Purpose
+
+POST
+
+/api/Auth/register
+
+Register a user
+
+POST
+
+/api/Auth/login
+
+Log in and obtain a JWT token
+
+GET
+
+/api/Events
+
+Retrieve all events
+
+GET
+
+/api/Events/{id}
+
+Retrieve an event by ID
+
+GET
+
+/api/Categories
+
+Retrieve all categories
+
+GET
+
+/api/Categories/{id}
+
+Retrieve a category by ID
+
+GET
+
+/api/Enrolments
+
+Retrieve all enrolments
+
+GET
+
+/api/Enrolments/{id}
+
+Retrieve an enrolment by ID
+
+GET
+
+/api/Results
+
+Retrieve all results (JWT required)
+
+GET
+
+/api/Results/{id}
+
+Retrieve a result by ID (JWT required)
+
+GET
+
+/api/diagnostics/database
+
+Check database connectivity
+
+Open Swagger after starting the application to view and test the available endpoints.
