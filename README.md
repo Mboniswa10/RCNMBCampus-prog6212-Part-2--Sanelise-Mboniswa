@@ -37,3 +37,33 @@ RaceDay.Api – Contains the Web API, controllers, data access configuration, da
 RaceDay.Contracts – Contains the contracts project for sharing request or response definitions between application components.
 
 RaceDay.Api.Tests – Contains automated tests for API functionality.
+
+The repository also retains the relevant Part 1 SQL scripts, documentation, and other assignment files.
+
+4. Database Design
+
+The application connects to the RaceDay database using SQL Server LocalDB.
+
+The database includes the following main entities:
+
+Users – Stores user information, including names, email addresses, password hashes, and roles.
+
+Events – Stores race event details, including event names, dates, venues, distances, entry fees, and participant limits.
+
+Categories – Stores event participation categories.
+
+Enrolments – Records participants' enrolments in events.
+
+Results – Stores race result information.
+
+The database design uses relational database principles, including primary keys and foreign-key relationships, to maintain data integrity.
+
+Database connection
+
+The application uses a connection string configured in appsettings.json. For local development, the connection string follows this format:
+
+Server=(localdb)\MSSQLLocalDB;Database=RaceDay;Trusted_Connection=True;TrustServerCertificate=True;
+
+Make sure the RaceDay database exists in your local SQL Server instance before running the API.
+
+
